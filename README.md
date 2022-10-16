@@ -1,5 +1,7 @@
 # chaoxing_tool-liuyunfz-
 
+超星学习通，一键全部课程，批量选择课程，单个课程视频观看，下载视频课件，增加学习次数，刷取学习时长......详见https://github.com/liuyunfz/chaoxing_tool
+
 作者：https://github.com/liuyunfz/chaoxing_tool      github会抄不会玩，仅用作暂存。一个线程一个线程执行，批量选课可一倍速，超星网课助手，拥有 一键完成超星中的任务点/刷取课程
 
 学习次数/下载课程资源 等功能。基于python语言
