@@ -714,13 +714,13 @@ class video_nomal_thread(threading.Thread):
             cookieTmp = cookieTmp + item.name + '=' + item.value + ';'
         self.multimedia_headers.update({"Cookie": cookieTmp})
         print("线程%s启动中，总任务时长%d秒" % (self.name, self.all_time))
-        time_now = 1
-        while time_now < self.all_time + 0:
-            time.sleep(2)
+        time_now = 60
+        while time_now < self.all_time + 60:
+            time.sleep(60)
             rsp = requests.get(url=self.url_replace(time_now), headers=self.multimedia_headers)
             print("线程%s运行中，共%d个视频节点，当前时长:%d ,总时长:%d" % (self.name, len(video_url_list), time_now, self.all_time))
             #print("除视频节点外任务已完成，接下来将对剩下的%d个视频节点进行处理" % len(video_url_list))
-            time_now = time_now + 2
+            time_now = time_now + 60
 
         rsp = requests.get(url=self.url_replace(self.all_time), headers=self.multimedia_headers)
         print("线程%s执行完成，任务状态:%s" % (self.name, rsp.text))
