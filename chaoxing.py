@@ -814,8 +814,8 @@ class Things():
                     for item in video_nomal_thread_pool:
                         item.start()
                         time.sleep(1)
-                    print("\n视频线程已全部启动\n")
-                    for item in video_nomal_thread_pool:
+                    #print("\n视频线程已全部启动\n")
+                    #for item in video_nomal_thread_pool:
                         item.join()
                 print("任务执行完成")
 
@@ -877,8 +877,8 @@ class Things():
                             for item in video_nomal_thread_pool:
                                 item.start()
                                 time.sleep(1)
-                            print("\n视频线程已全部启动\n")
-                            for item in video_nomal_thread_pool:
+                            #print("\n视频线程已全部启动\n")
+                            #for item in video_nomal_thread_pool:
                                 item.join()
                         print("任务执行完成")
 
